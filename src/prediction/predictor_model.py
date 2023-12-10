@@ -43,6 +43,7 @@ class Forecaster:
         dropout: float = 0.0,
         activation: str = "ReLU",
         optimizer_kwargs: Optional[dict] = None,
+        use_exogenous: bool = True,
         random_state: int = 0,
         **kwargs,
     ):
@@ -105,6 +106,9 @@ class Forecaster:
             random_state (int):
                 Sets the underlying random seed at model initialization time.
 
+            use_exogenous (bool):
+                Indicated if past covariates are used or not.
+
             **kwargs:
                 Optional arguments to initialize the pytorch_lightning.Module, pytorch_lightning.Trainer, and Darts' TorchForecastingModel.
         """
@@ -121,6 +125,7 @@ class Forecaster:
         self.dropout = dropout
         self.activation = activation
         self.optimizer_kwargs = optimizer_kwargs
+        self.use_exogenous = use_exogenous
         self.random_state = random_state
         self.kwargs = kwargs
         self._is_trained = False
@@ -303,6 +308,10 @@ class Forecaster:
             data_schema=data_schema,
             test_dataframe=test_dataframe,
         )
+
+        if not self.use_exogenous:
+            past_covariates = None
+
         self.model.fit(
             targets,
             past_covariates=past_covariates,
