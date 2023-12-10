@@ -1,0 +1,18 @@
+{
+  "history_forecast_ratio": 10,
+  "input_chunk_length": 20,
+  "output_chunk_length": 3,
+  "num_blocks": 2,
+  "num_stacks": 2,
+  "layer_widths": 64,
+  "dropout": 0.0,
+  "generic_architecture": false,
+  "trend_polynomial_degree": 2,
+  "n_epochs": 300,
+  "batch_size": 16,
+  "force_reset": true,
+  "save_checkpoints": true,
+  "optimizer_kwargs": {"lr": 1e-3},
+  "random_state": 0
+
+}
