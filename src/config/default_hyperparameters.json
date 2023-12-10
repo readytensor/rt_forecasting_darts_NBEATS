@@ -1,10 +1,9 @@
 {
-  "history_forecast_ratio": 10,
-  "input_chunk_length": 20,
-  "output_chunk_length": 3,
+  "history_forecast_ratio": 6,
+  "lags_forecast_ratio": 3,
   "num_blocks": 2,
   "num_stacks": 2,
-  "layer_widths": 64,
+  "layer_widths": 32,
   "dropout": 0.0,
   "generic_architecture": true,
   "trend_polynomial_degree": 2,
@@ -15,5 +14,4 @@
   "optimizer_kwargs": {"lr": 1e-3},
   "use_exogenous": false,
   "random_state": 0
-
 }

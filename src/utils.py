@@ -210,7 +210,7 @@ def process_hyperparameters(hyperparameters: dict, forecast_length: int) -> dict
         lags_forecast_ratio = hyperparameters["lags_forecast_ratio"]
         lags = forecast_length * lags_forecast_ratio
         hyperparameters["input_chunk_length"] = lags
-        # hyperparameters["training_length"] = lags + forecast_length
+        hyperparameters["output_chunk_length"] = forecast_length
 
     for k in to_be_removed:
         if k in hyperparameters:
