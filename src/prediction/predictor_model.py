@@ -331,6 +331,7 @@ class Forecaster:
         predictions = self.model.predict(
             n=self.data_schema.forecast_length,
             series=self.targets_series,
+            past_covariates=self.past_covariates,
         )
         prediction_values = []
         for index, prediction in enumerate(predictions):
