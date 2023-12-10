@@ -1,6 +1,6 @@
 {
-  "history_forecast_ratio": 6,
-  "lags_forecast_ratio": 3,
+  "history_forecast_ratio": 8,
+  "lags_forecast_ratio":4,
   "num_blocks": 2,
   "num_stacks": 2,
   "layer_widths": 32,
