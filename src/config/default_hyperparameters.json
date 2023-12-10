@@ -6,7 +6,7 @@
   "num_stacks": 2,
   "layer_widths": 64,
   "dropout": 0.0,
-  "generic_architecture": false,
+  "generic_architecture": true,
   "trend_polynomial_degree": 2,
   "n_epochs": 300,
   "batch_size": 16,
