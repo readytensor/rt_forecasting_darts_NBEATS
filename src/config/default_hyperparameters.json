@@ -1,9 +1,10 @@
 {
   "history_forecast_ratio": 10,
-  "lags_forecast_ratio":4,
+  "lags_forecast_ratio": 4,
   "num_blocks": 2,
   "num_stacks": 2,
-  "layer_widths": 32,
+  "num_layers": 5,
+  "layer_widths": 64,
   "dropout": 0.0,
   "generic_architecture": true,
   "trend_polynomial_degree": 2,
