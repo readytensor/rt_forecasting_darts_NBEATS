@@ -157,7 +157,7 @@ class Forecaster:
 
         stopper = EarlyStopping(
             monitor="train_loss",
-            patience=30,
+            patience=50,
             min_delta=0.0005,
             mode="min",
         )
