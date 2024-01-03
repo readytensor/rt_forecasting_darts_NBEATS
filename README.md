@@ -22,7 +22,9 @@ Past :white_check_mark:
 
 Future :x:
 
-## Static :x:
+Static :x:
+
+---
 
 Here are the highlights of this implementation: <br/>
 
