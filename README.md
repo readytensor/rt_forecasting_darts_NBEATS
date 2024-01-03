@@ -16,6 +16,14 @@ The following are the requirements for using your data with this model:
 
 ---
 
+### Covariates Support:
+
+Past :white_check_mark:
+
+Future :x:
+
+## Static :x:
+
 Here are the highlights of this implementation: <br/>
 
 - A **NBEATS Forecaster** algorithm built using **Darts**
